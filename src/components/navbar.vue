@@ -8,7 +8,7 @@
                         <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Products</a>
+                        <button class="nav-link">Products</button>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">For Teams</a>
@@ -26,5 +26,18 @@
 .navbar {
     border-bottom: 1px solid hsl(210, 8%, 85%);
     height: 56px;
+}
+
+.nav-item {
+    font-size: 13px;
+    font-weight: 400;
+    height: 29px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item:hover {
+    background-color: #e3e6e8;
+    border-radius: 360px;
 }
 </style>
