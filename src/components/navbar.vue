@@ -1,3 +1,9 @@
+<script setup>
+import { ref } from 'vue';
+
+const isActive = ref(false);
+</script>
+
 <template>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -9,7 +15,7 @@
                     </li>
                     <li class="nav-item">
                         <div class="dropdown">
-                            <button class="nav-link" type="button" data-bs-toggle="dropdown">
+                            <button class="nav-link" :class="{ active: isActive }" @click="isActive = !isActive" type="button" data-bs-toggle="dropdown">
                                 Products
                             </button>
                             <ul class="dropdown-menu">
@@ -86,5 +92,16 @@
     font-size: 12px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.65);
+}
+
+.nav-link.active {
+    font-size: 13px;
+    font-weight: 400;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    background-color: hsl(27, 90.4%, 55.1%);
+    color: white !important;
+    border-radius: 360px;
 }
 </style>
