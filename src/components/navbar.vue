@@ -76,11 +76,15 @@ const isActive = ref(false);
     height: 29px;
     display: flex;
     align-items: center;
+    border-radius: 360px;
 }
 
 .nav-item:hover {
     background-color: #e3e6e8;
-    border-radius: 360px;
+}
+
+.dropdown-menu {
+    width: 210px;
 }
 
 .dropdown_title {
