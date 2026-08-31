@@ -11,11 +11,11 @@ const isActive = ref(false);
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link navbtn" href="#">About</a>
                     </li>
                     <li class="nav-item">
                         <div class="dropdown">
-                            <button class="nav-link" :class="{ active: isActive }" @click="isActive = !isActive" type="button" data-bs-toggle="dropdown">
+                            <button class="nav-link navbtn" :class="{ active: isActive }" @click="isActive = !isActive" type="button" data-bs-toggle="dropdown">
                                 Products
                             </button>
                             <ul class="dropdown-menu">
@@ -53,7 +53,7 @@ const isActive = ref(false);
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">For Teams</a>
+                        <a class="nav-link navbtn" href="#">For Teams</a>
                     </li>
                     <li class="nav-item">
                         <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" />
@@ -71,6 +71,11 @@ const isActive = ref(false);
 }
 
 .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link.navbtn {
     font-size: 13px;
     font-weight: 400;
     height: 29px;
@@ -79,7 +84,7 @@ const isActive = ref(false);
     border-radius: 360px;
 }
 
-.nav-item:hover {
+.nav-link.navbtn:hover {
     background-color: #e3e6e8;
 }
 
@@ -98,7 +103,7 @@ const isActive = ref(false);
     color: rgba(0, 0, 0, 0.65);
 }
 
-.nav-link.active {
+.nav-link.navbtn.active {
     font-size: 13px;
     font-weight: 400;
     height: 29px;
