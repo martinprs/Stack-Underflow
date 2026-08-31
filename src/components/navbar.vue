@@ -15,32 +15,37 @@ const isActive = ref(false);
                     </li>
                     <li class="nav-item">
                         <div class="dropdown">
-                            <button class="nav-link navbtn" :class="{ active: isActive }" @click="isActive = !isActive" type="button" data-bs-toggle="dropdown">
+                            <button class="nav-link navbtn" :class="{ active: isActive }" @click="isActive = !isActive"
+                                type="button" data-bs-toggle="dropdown">
                                 Products
                             </button>
                             <ul class="dropdown-menu">
                                 <li>
                                     <a class="dropdown-item" href="#">
                                         <p class="dropdown_title">Stack Internal</p>
-                                        <p class="dropdown_caption">Implement a knowledge platform layer to power your enterprise and AI tools.</p>
+                                        <p class="dropdown_caption">Implement a knowledge platform layer to power your
+                                            enterprise and AI tools.</p>
                                     </a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="#">
                                         <p class="dropdown_title">Stack Data Licensing</p>
-                                        <p class="dropdown_caption">Get access to top-class technical expertise with trusted & attributed content.</p>
+                                        <p class="dropdown_caption">Get access to top-class technical expertise with
+                                            trusted & attributed content.</p>
                                     </a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="#">
                                         <p class="dropdown_title">Stack Ads</p>
-                                        <p class="dropdown_caption">Connect your brand to the world's most trusted technologist communities.</p>
+                                        <p class="dropdown_caption">Connect your brand to the world's most trusted
+                                            technologist communities.</p>
                                     </a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="#">
                                         <p class="dropdown_title">Releases</p>
-                                        <p class="dropdown_caption">Keep up to-date on features we add to Stack Underflow and Stack Internal.</p>
+                                        <p class="dropdown_caption">Keep up to-date on features we add to Stack
+                                            Underflow and Stack Internal.</p>
                                     </a>
                                 </li>
                                 <li>
