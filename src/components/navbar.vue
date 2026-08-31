@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue';
+import Favicon from '../../public/Favicon.ico'
 
 const isActive = ref(false);
 </script>
@@ -7,7 +8,11 @@ const isActive = ref(false);
 <template>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Stack Underflow</a>
+            <a class="navbar-brand" href="#">
+                <span><img :src="Favicon" alt="Favicon"></span>
+                <span style="margin-right: 3px;">stack</span>
+                <span style="font-weight: bold;">underflow</span>
+            </a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -152,5 +157,11 @@ const isActive = ref(false);
 .searchbar input::placeholder {
     font-size: 13px;
     color: hsl(210, 8%, 25%);
+}
+
+.navbar-brand {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
 }
 </style>
