@@ -61,7 +61,15 @@ const isActive = ref(false);
                         <a class="nav-link navbtn" href="#">For Teams</a>
                     </li>
                     <li class="nav-item">
-                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" />
+                        <div class="searchbar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search search-icon" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+
+                            <input class="form-control" type="search" placeholder="Search..." aria-label="Search" />
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -117,5 +125,32 @@ const isActive = ref(false);
     background-color: hsl(27, 90.4%, 55.1%);
     color: white !important;
     border-radius: 360px;
+}
+
+.searchbar {
+    position: relative;
+    width: 717px;
+}
+
+.searchbar input {
+    width: 100%;
+    height: 32px;
+    padding-left: 36px;
+    border-color: hsl(210, 7.8%, 74.9%);
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    color: hsl(210, 8%, 45%);
+}
+
+.searchbar input::placeholder {
+    font-size: 13px;
+    color: hsl(210, 8%, 25%);
 }
 </style>
