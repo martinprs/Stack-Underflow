@@ -76,6 +76,12 @@ const isActive = ref(false);
                             <input class="form-control" placeholder="Search..." aria-label="Search" />
                         </div>
                     </li>
+                    <li class="nav-item">
+                        <div class="buttons">
+                            <button class="btn log">Log in</button>
+                            <button class="btn sign">Sign up</button>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -167,5 +173,37 @@ const isActive = ref(false);
     font-family: sans-serif;
     display: flex;
     align-items: center;
+}
+
+.buttons {
+    margin-left: 5px;
+}
+
+.btn {
+    font-size: 13px !important;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    margin: 0px 2px;
+}
+
+.btn.log {
+    background-color: hsl(205.3, 46.3%, 92%);
+    color: hsl(205, 46%, 32%);
+}
+
+.btn.log:hover {
+    background-color: hsl(205, 57%, 81%);
+    color: hsl(205, 46%, 32%);
+}
+
+.btn.sign {
+    background-color: hsl(206, 100%, 52%);
+    color: white;
+}
+
+.btn.sign:hover {
+    background-color: hsl(206, 100%, 40%);
+    color: white;
 }
 </style>
