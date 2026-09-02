@@ -116,6 +116,10 @@ const isActive = ref(false);
     width: 210px;
 }
 
+.dropdown-item p {
+    margin: 0;
+}
+
 .dropdown_title {
     font-size: 13px;
     color: black;
@@ -125,6 +129,7 @@ const isActive = ref(false);
     font-size: 12px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.65);
+    white-space: normal;
 }
 
 .nav-link.navbtn.active {
