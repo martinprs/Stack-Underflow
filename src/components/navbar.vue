@@ -47,14 +47,14 @@ const isActive = ref(false);
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item border-top" href="#">
                                         <p class="dropdown_title">Releases</p>
                                         <p class="dropdown_caption">Keep up to-date on features we add to Stack
                                             Underflow and Stack Internal.</p>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item border-top" href="#">
                                         <p class="dropdown_title">About the company</p>
                                         <p class="dropdown_title">Visit the blog</p>
                                     </a>
@@ -90,6 +90,7 @@ const isActive = ref(false);
 
 <style>
 .navbar {
+    border-top: 2px solid hsl(27.2, 89.3%, 47.8%);
     border-bottom: 1px solid hsl(210, 8%, 85%);
     height: 56px;
 }
