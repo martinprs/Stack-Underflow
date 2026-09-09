@@ -161,6 +161,10 @@ const isActive = ref(false);
     border-radius: 360px;
 }
 
+.nav-link.navbtn.active:hover {
+    background-color: hsl(27, 90%, calc(55% - 10%));
+}
+
 .searchbar {
     position: relative;
     width: 717px;
