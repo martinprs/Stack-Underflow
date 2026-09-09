@@ -47,18 +47,20 @@ const isActive = ref(false);
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item border-top" href="#">
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
                                         <p class="dropdown_title">Releases</p>
                                         <p class="dropdown_caption">Keep up to-date on features we add to Stack
                                             Underflow and Stack Internal.</p>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item border-top" href="#">
-                                        <p class="dropdown_title">About the company</p>
-                                        <p class="dropdown_title">Visit the blog</p>
-                                    </a>
+                                    <hr class="dropdown-divider">
                                 </li>
+                                <li><a class="dropdown-item-text dropdown_link" href="#">About the company</a></li>
+                                <li><a class="dropdown-item-text dropdown_link" href="#">Visit the blog</a></li>
                             </ul>
                         </div>
                     </li>
@@ -109,6 +111,10 @@ const isActive = ref(false);
     border-radius: 360px;
 }
 
+.dropdown-item:active {
+    background-color: #e3e6e8 !important;
+}
+
 .nav-link.navbtn:hover {
     background-color: #e3e6e8;
 }
@@ -124,6 +130,15 @@ const isActive = ref(false);
 .dropdown_title {
     font-size: 13px;
     color: black;
+}
+
+.dropdown_link {
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+}
+.dropdown_link:hover {
+    cursor: pointer;
 }
 
 .dropdown_caption {
