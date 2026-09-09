@@ -121,6 +121,8 @@ const isActive = ref(false);
 
 .dropdown-menu {
     width: 210px;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
 }
 
 .dropdown-item p {
