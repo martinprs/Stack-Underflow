@@ -7,14 +7,14 @@ const isActive = ref(false);
 
 <template>
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="#">
                 <span><img :src="Favicon" alt="Favicon"></span>
                 <span style="margin-right: 3px;">stack</span>
                 <span style="font-weight: bold;">underflow</span>
             </a>
             <div class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link navbtn" href="#">About</a>
                     </li>
@@ -109,6 +109,7 @@ const isActive = ref(false);
     display: flex;
     align-items: center;
     border-radius: 360px;
+    margin: 0px 5px;
 }
 
 .dropdown-item:active {
