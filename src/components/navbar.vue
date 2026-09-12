@@ -90,7 +90,7 @@ const isActive = ref(false);
     </nav>
 </template>
 
-<style>
+<style scoped>
 .navbar {
     border-top: 2px solid hsl(27.2, 89.3%, 47.8%);
     border-bottom: 1px solid hsl(210, 8%, 85%);

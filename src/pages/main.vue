@@ -1,7 +1,7 @@
 <template>
     <div class="container text-center">
-        <div class="row custom-row">
-            <div class="first-column">
+        <div class="row">
+            <div class="col first">
                 <div class="sidebar overflow-auto">
                     <button class="dropdown-item">Home</button>
                     <button class="dropdown-item">Questions</button>
@@ -10,14 +10,14 @@
                 </div>
             </div>
 
-            <div class="second-column">
+            <div class="col second">
                 Second column
             </div>
         </div>
     </div>
 </template>
 
-<style>
+<style scoped>
 .dropdown-item {
     height: 33px;
     border-radius: 6px 0 0 6px;
@@ -40,20 +40,19 @@
     font-weight: bold;
 }
 
-.custom-row {
+.row {
     width: 1264px;
     margin: 0 0px;
 }
 
-.first-column {
+.col.first {
     border-right: 1px solid hsl(210, 8%, 85%);
     flex: 0 0 164px;
     width: 164px;
     padding: 0px;
 }
 
-.second-column {
-    flex: 0 0 1100px;
+.col.second {
     width: 1100px;
     padding: 0px;
 }
