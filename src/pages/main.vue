@@ -29,30 +29,32 @@
 
 .dropdown-item:hover {
     background-color: hsl(210, 7.7%, 94.9%);
+    border-radius: 4px 0 0 4px;
     color: black;
 }
 
 .dropdown-item:active {
     background-color: hsl(0, 0%, 97%);
     border-right: 3px solid hsl(27, 90%, 55%);
+    border-radius: 4px 0 0 4px;
     font-weight: bold;
 }
 
 .custom-row {
     width: 1264px;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 0px;
 }
 
 .first-column {
+    border-right: 1px solid hsl(210, 8%, 85%);
     flex: 0 0 164px;
     width: 164px;
-    padding: 0;
+    padding: 0px;
 }
 
 .second-column {
     flex: 0 0 1100px;
     width: 1100px;
-    padding: 0;
+    padding: 0px;
 }
 </style>
