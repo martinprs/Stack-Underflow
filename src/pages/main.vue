@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col first">
                 <div class="sidebar overflow-auto">
-                    <button class="dropdown-item">Home</button>
+                    <button class="dropdown-item active">Home</button>
                     <button class="dropdown-item">Questions</button>
                     <button class="dropdown-item">Tags</button>
                     <button class="dropdown-item">Saves</button>
@@ -18,6 +18,10 @@
 </template>
 
 <style scoped>
+.sidebar {
+    margin-top: 24px;
+}
+
 .dropdown-item {
     height: 33px;
     border-radius: 6px 0 0 6px;
@@ -33,7 +37,7 @@
     color: black;
 }
 
-.dropdown-item:active {
+.dropdown-item.active {
     background-color: hsl(0, 0%, 97%);
     border-right: 3px solid hsl(27, 90%, 55%);
     border-radius: 4px 0 0 4px;
@@ -43,6 +47,7 @@
 .row {
     width: 1264px;
     margin: 0 0px;
+    height: 100vh;
 }
 
 .col.first {
