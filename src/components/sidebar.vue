@@ -1,6 +1,6 @@
 <template>
     <div class="sidebar overflow-auto">
-        <button class="dropdown-item active">
+        <button class="dropdown-item">
             <svg aria-hidden="true" class="svg-icon iconHome" width="18" height="18" viewBox="0 0 18 18">
                 <path d="M15 10v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5H0l9-9 9 9zm-8 1v6h4v-6z"></path>
             </svg>
@@ -111,14 +111,14 @@
     fill: black;
 }
 
-.dropdown-item.active {
+.dropdown-item:active {
     background-color: hsl(0, 0%, 94%);
     border-right: 3px solid hsl(27, 90%, 55%);
     border-radius: 4px 0 0 4px;
     font-weight: bold;
 }
 
-.dropdown-item.active .svg-icon {
+.dropdown-item:active .svg-icon {
     fill: black;
 }
 </style>
