@@ -78,6 +78,13 @@ const filterActive = ref(false)
     background-color: hsl(205.1, 56.7%, 81%);
 }
 
+.filter_btn.active,
+.filter_btn:active {
+    color: hsl(204.5, 39.2%, 46.5%) !important;
+    background-color: hsl(205.1, 56.7%, 81%) !important;
+    border-color: transparent;
+}
+
 .filter_btn svg {
     position: relative;
     top: -2px;
@@ -135,6 +142,12 @@ const filterActive = ref(false)
 }
 
 .btn.ask:hover {
+    background-color: hsl(206, 91%, 44%);
+}
+
+.btn.ask.active,
+.btn.ask:active {
+    color: white;
     background-color: hsl(206, 91%, 44%);
 }
 

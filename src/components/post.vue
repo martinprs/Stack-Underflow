@@ -77,6 +77,13 @@
     background-color: hsl(205, 53%, 88%);
 }
 
+.btn.post_tag.active,
+.btn.post_tag:active {
+    color: hsl(205, 46%, 32%);
+    background-color: hsl(205, 53%, 88%);
+    border-color: transparent;
+}
+
 .post_title {
     overflow-wrap: break-word !important;
     text-decoration: none;
