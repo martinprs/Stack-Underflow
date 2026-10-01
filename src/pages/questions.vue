@@ -7,7 +7,7 @@ const filterActive = ref(false)
 <template>
     <div class="container">
         <div class="row">
-            <div class="col first border-bottom">
+            <div class="col first">
                 <div class="header d-flex">
                     <h1 class="w-100 text-start">All Questions</h1>
                     <button class="btn ask">Ask Question</button>
@@ -45,6 +45,7 @@ const filterActive = ref(false)
                         <span style="margin-left: 2px;">Filter</span>
                     </button>
                 </div>
+                <div class="border-bottom"></div>
             </div>
             <div class="col second">
                 Second col
