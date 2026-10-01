@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from 'vue'
 
+import post from "../components/post.vue";
+
 const filterActive = ref(false)
 </script>
 
@@ -45,7 +47,12 @@ const filterActive = ref(false)
                         <span style="margin-left: 2px;">Filter</span>
                     </button>
                 </div>
+
                 <div class="border-bottom"></div>
+
+                <div class="posts">
+                    <post />
+                </div>
             </div>
             <div class="col second">
                 Second col
