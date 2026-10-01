@@ -50,7 +50,8 @@ const filterActive = ref(false)
 
                 <div class="border-bottom"></div>
 
-                <div class="questions">
+                <div class="questions list-group list-group-flush">
+                    <post />
                     <post />
                 </div>
             </div>

@@ -1,5 +1,5 @@
 <template>
-    <div class="card border-bottom">
+    <div class="card list-group-item">
         <div class="row">
             <div class="col first text-end">
                 <p class="stat_text" style="color: black; margin-top: 4px;">0 votes</p>
@@ -105,7 +105,6 @@
 
 .card {
     min-height: 90px;
-    border: none;
     padding: 16px 0;
     border-radius: 0px;
 }
