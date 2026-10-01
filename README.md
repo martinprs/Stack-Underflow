@@ -1,7 +1,7 @@
 # Stack-Underflow
 Simplified Stack Overflow clone project. It's a mix between [1. Sept 2023](https://web.archive.org/web/20230901021322/https://stackoverflow.com/questions) and [1. Sept 2026](https://stackoverflow.com/) designs of Stack Overflow.
 
-## Tech used
+## Stack used
 [![Vue.js](https://img.shields.io/badge/Vue.js-green?logo=vuedotjs&logoColor=white)](https://vuejs.org/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-purple?logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 [![Vite](https://img.shields.io/badge/Vite-purple?logo=vite&logoColor=white)](https://vitejs.dev/)
