@@ -56,13 +56,84 @@ const filterActive = ref(false)
                 </div>
             </div>
             <div class="col second">
-                Second col
+                <ul class="list-group">
+                    <li class="list-group-item title">
+                        The Overflow Blog
+                    </li>
+                    <li class="list-group-item content">
+                        <a href="#" class="sidebar_link">
+                            What it’s like being a professional workplace bestie (Ep. 603)
+                        </a>
+                    </li>
+                    <li class="list-group-item content ">
+                        <a href="#" class="sidebar_link ">
+                            Journey to the cloud part I: Migrating Stack Overflow Teams to Azure
+                        </a>
+                    </li>
+                    <li class="list-group-item title">
+                        Featured on Meta
+                    </li>
+                    <li class="list-group-item content">
+                        <a href="#" class="sidebar_link">
+                            Moderation strike: Results of negotiations
+                        </a>
+                    </li>
+                    <li class="list-group-item content">
+                        <a href="#" class="sidebar_link">
+                            Our Design Vision for Stack Overflow and the Stack Exchange network
+                        </a>
+                    </li>
+                    <li class="list-group-item content">
+                        <a href="#" class="sidebar_link">
+                            Temporary policy: Generative AI (e.g., ChatGPT) is banned
+                        </a>
+                    </li>
+                    <li class="list-group-item content">
+                        <a href="#" class="sidebar_link">
+                            Discussions experiment launching on NLP Collective
+                        </a>
+                    </li>
+                    <li class="list-group-item content">
+                        <a href="#" class="sidebar_link">
+                            Call for volunteer reviewers for an updated search experience:
+                            OverflowAI Search
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </template>
 
 <style scoped>
+/* Second column */
+.list-group-item.title {
+    background-color: hsl(47.4, 82.6%, 91%);
+    border-color: hsl(47, 65%, 84%);
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 12px;
+    height: 41px;
+    font-weight: bold;
+    color: hsl(210, 8%, 35%);
+}
+
+.list-group-item.content {
+    background-color: hsl(46.7, 87.1%, 93.9%);
+    border-color: hsl(47, 65%, 84%);
+    display: flex;
+    align-items: center;
+}
+
+.sidebar_link {
+    color: hsl(210, 8%, 25%);
+    text-align: left;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* First column */
 .filter_btn {
     height: 35px;
     width: 68px;
@@ -172,5 +243,6 @@ h1 {
 .col.second {
     flex: 0 0 300px;
     padding: 0;
+    margin-left: 24px;
 }
 </style>
