@@ -21,13 +21,13 @@
                         <button class="btn post_tag">tinymce-5</button>
                         <button class="btn post_tag">dotcms</button>
                     </div>
-                    <div class="col d-flex justify-content-end">
+                    <div class="col d-flex justify-content-end align-items-center">
                         <a href="#" class="user_card">
                             <img src="https://web.archive.org/web/20230901021322im_/https://www.gravatar.com/avatar/ecde56d63d638efa00dbd7808c54d055?s=32&d=identicon&r=PG&f=y&so-version=2"
                                 class="avatar">
                             hotchoco
                         </a>
-                        <p class="stat_text" style="font-size: 12px;">
+                        <p class="stat_text mb-0" style="font-size: 12px;">
                             <span style="font-weight: bold;">77</span>
                             asked
                             <span>1 min ago</span>
