@@ -48,9 +48,9 @@ const filterActive = ref(false)
                     </button>
                 </div>
 
-                <div class="border-bottom"></div>
+                <div class="border-bottom" style="margin-left: -24px;"></div>
 
-                <div class="questions list-group list-group-flush">
+                <div class="questions list-group list-group-flush" style="margin-left: -24px;">
                     <post />
                     <post />
                 </div>
