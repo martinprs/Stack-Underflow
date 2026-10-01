@@ -50,7 +50,7 @@ const filterActive = ref(false)
 
                 <div class="border-bottom"></div>
 
-                <div class="posts">
+                <div class="questions">
                     <post />
                 </div>
             </div>
