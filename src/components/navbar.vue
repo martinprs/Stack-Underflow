@@ -69,10 +69,11 @@ const isActive = ref(false);
                     </li>
                     <li class="nav-item">
                         <div class="searchbar">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-search search-icon" viewBox="0 0 16 16">
+                            <svg class="search-icon"
+                                width="18" height="18" viewBox="0 0 18 18">
                                 <path
-                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                    d="m18 16.5-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18l1.5-1.5ZM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0Z">
+                                </path>
                             </svg>
 
                             <input class="form-control" placeholder="Search..." aria-label="Search" />
@@ -140,6 +141,7 @@ const isActive = ref(false);
     color: black;
     text-decoration: none;
 }
+
 .dropdown_link:hover {
     cursor: pointer;
 }
@@ -183,14 +185,12 @@ const isActive = ref(false);
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
-    width: 16px;
-    height: 16px;
-    color: hsl(210, 8%, 45%);
+    fill: hsl(210,8%,55%);
 }
 
 .searchbar input::placeholder {
     font-size: 13px;
-    color: hsl(210, 8%, 25%);
+    color: hsl(210,8%,55%);
 }
 
 .searchbar input {
