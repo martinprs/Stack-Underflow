@@ -58,8 +58,8 @@ const filterActive = ref(false)
                 <div class="pagin">
                     <div class="row">
                         <div class="col first_pagi justify-content-start">
-                            <button class="btn next">Previous</button>
-                            <button class="btn pagi">1</button>
+                            <button class="btn next visually-hidden">Previous</button>
+                            <button class="btn pagi active">1</button>
                             <button class="btn pagi">2</button>
                             <button class="btn pagi">3</button>
                             <button class="btn pagi">4</button>
@@ -71,7 +71,7 @@ const filterActive = ref(false)
                         <div class="col second_pagi justify-content-end">
                             <button class="btn pagi">15</button>
                             <button class="btn pagi">30</button>
-                            <button class="btn pagi">50</button>
+                            <button class="btn pagi active">50</button>
                             <p class="pagi_text">per page</p>
                         </div>
                     </div>
