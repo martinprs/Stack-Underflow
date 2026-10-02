@@ -57,7 +57,7 @@ const filterActive = ref(false)
             </div>
             <div class="col second">
                 <ul class="list-group">
-                    <li class="list-group-item title">
+                    <li class="list-group-item title" style="border-radius: 4px 4px 0 0;">
                         The Overflow Blog
                     </li>
                     <li class="list-group-item content">
@@ -71,7 +71,7 @@ const filterActive = ref(false)
                     <li class="list-group-item title">
                         Featured on Meta
                     </li>
-                    <li class="list-group-item content">
+                    <li class="list-group-item content" style="border-radius: 0 0 4px 4px;">
                         <a href="#" class="sidebar_link">
                             Moderation strike: Results of negotiations
                         </a>
@@ -125,6 +125,10 @@ const filterActive = ref(false)
     font-size: 13px;
     margin-bottom: 10px;
 }
+
+.sidebar_link:hover {
+    color: hsl(210,8%,35%);
+} 
 
 /* First column */
 .filter_btn {
