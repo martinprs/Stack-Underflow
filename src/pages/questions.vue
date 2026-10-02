@@ -64,8 +64,6 @@ const filterActive = ref(false)
                         <a href="#" class="sidebar_link">
                             What it’s like being a professional workplace bestie (Ep. 603)
                         </a>
-                    </li>
-                    <li class="list-group-item content ">
                         <a href="#" class="sidebar_link ">
                             Journey to the cloud part I: Migrating Stack Overflow Teams to Azure
                         </a>
@@ -77,23 +75,15 @@ const filterActive = ref(false)
                         <a href="#" class="sidebar_link">
                             Moderation strike: Results of negotiations
                         </a>
-                    </li>
-                    <li class="list-group-item content">
                         <a href="#" class="sidebar_link">
                             Our Design Vision for Stack Overflow and the Stack Exchange network
                         </a>
-                    </li>
-                    <li class="list-group-item content">
                         <a href="#" class="sidebar_link">
                             Temporary policy: Generative AI (e.g., ChatGPT) is banned
                         </a>
-                    </li>
-                    <li class="list-group-item content">
                         <a href="#" class="sidebar_link">
                             Discussions experiment launching on NLP Collective
                         </a>
-                    </li>
-                    <li class="list-group-item content">
                         <a href="#" class="sidebar_link">
                             Call for volunteer reviewers for an updated search experience:
                             OverflowAI Search
@@ -122,15 +112,18 @@ const filterActive = ref(false)
 .list-group-item.content {
     background-color: hsl(46.7, 87.1%, 93.9%);
     border-color: hsl(47, 65%, 84%);
+    flex-direction: column;
     display: flex;
-    align-items: center;
 }
 
+
 .sidebar_link {
+    align-self: stretch;
     color: hsl(210, 8%, 25%);
     text-align: left;
     text-decoration: none;
     font-size: 13px;
+    margin-bottom: 10px;
 }
 
 /* First column */
