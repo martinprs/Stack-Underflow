@@ -55,9 +55,9 @@ const filterActive = ref(false)
                     <post />
                 </div>
 
-                <div class="pagination">
+                <div class="pagin">
                     <div class="row">
-                        <div class="col first_pagi">
+                        <div class="col first_pagi justify-content-start">
                             <button class="btn next">Previous</button>
                             <button class="btn pagi">1</button>
                             <button class="btn pagi">2</button>
@@ -68,7 +68,7 @@ const filterActive = ref(false)
                             <button class="btn pagi">477928</button>
                             <button class="btn next">Next</button>
                         </div>
-                        <div class="col second_pagi">
+                        <div class="col second_pagi justify-content-end">
                             <button class="btn pagi">15</button>
                             <button class="btn pagi">30</button>
                             <button class="btn pagi">50</button>
@@ -120,13 +120,20 @@ const filterActive = ref(false)
 
 <style scoped>
 /* Pagination */
+.col.first_pagi, 
+.col.second_pagi {
+    display: flex;
+    padding: 0;
+    gap: 4px;
+}
+
+
 .btn.pagi {
     min-width: 25px;
     height: 27px;
     font-size: 13px;
     padding: 5px;
     border-radius: 4px;
-    margin-right: 4px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -149,7 +156,6 @@ const filterActive = ref(false)
     height: 27px;
     font-size: 13px;
     border-radius: 4px;
-    margin-right: 4px;
     display: inline-flex;
     align-items: center;
     border-color: hsl(210, 8%, 75%);
@@ -166,7 +172,11 @@ const filterActive = ref(false)
 }
 
 .pagi_text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font-size: 13px;
+    margin: 0 8px;
     color: hsl(210, 8%, 15%);
 }
 
