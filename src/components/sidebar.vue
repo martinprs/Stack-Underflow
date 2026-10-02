@@ -25,7 +25,7 @@ function goTo(path) {
             </svg>
             <span class="span_gap">Questions</span>
         </button>
-        <button class="dropdown-item">
+        <button class="dropdown-item" :class="{ active: route.path === '/tags'}" @click="goTo('/tags')">
             <svg aria-hidden="true" class="svg-icon iconTags" width="18" height="18" viewBox="0 0 18 18">
                 <path
                     d="M9.24 1a3 3 0 0 0-2.12.88l-5.7 5.7a2 2 0 0 0-.38 2.31 3 3 0 0 1 .67-1.01l6-6A3 3 0 0 1 9.83 2H14a3 3 0 0 1 .79.1A2 2 0 0 0 13 1z"
