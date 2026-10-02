@@ -165,6 +165,11 @@ const filterActive = ref(false)
     border-color: hsl(210, 8%, 75%);
 }
 
+.pagi_text {
+    font-size: 13px;
+    color: hsl(210, 8%, 15%);
+}
+
 /* Second column */
 .list-group-item.title {
     background-color: hsl(47.4, 82.6%, 91%);
