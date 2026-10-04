@@ -1,3 +1,7 @@
+<script setup>
+import tagsCard from "../components/tags/tagsCard.vue";
+</script>
+
 <template>
     <div class="container">
         <h1 class="w-100 text-start mb-16">Tags</h1>
@@ -21,6 +25,14 @@
                 <button class="btn">Name</button>
                 <button class="btn">New</button>
             </div>
+        </div>
+
+        <div class="row row-cols-lg-4">
+            <tagsCard />
+            <tagsCard />
+            <tagsCard />
+            <tagsCard />
+            <tagsCard />
         </div>
     </div>
 </template>
