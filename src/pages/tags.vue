@@ -34,6 +34,18 @@ import tagsCard from "../components/tags/tagsCard.vue";
             <tagsCard />
             <tagsCard />
         </div>
+
+        <div class="pagin d-flex justify-content-end">
+            <button class="btn next visually-hidden">Previous</button>
+            <button class="btn pagi active">1</button>
+            <button class="btn pagi">2</button>
+            <button class="btn pagi">3</button>
+            <button class="btn pagi">4</button>
+            <button class="btn pagi">5</button>
+            <p class="pagi_text">...</p>
+            <button class="btn pagi">477928</button>
+            <button class="btn next">Next</button>
+        </div>
     </div>
 </template>
 
@@ -92,5 +104,66 @@ h1 {
 .btn-group .btn:active {
     border-color: hsl(210, 7.8%, 74.9%);
     background-color: hsl(204, 9.8%, 90%);
+}
+
+/* Pagination */
+.col.first_pagi,
+.col.second_pagi {
+    display: flex;
+    padding: 0;
+    gap: 4px;
+}
+
+
+.btn.pagi {
+    min-width: 25px;
+    height: 27px;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-color: hsl(210, 8%, 75%);
+    color: hsl(210, 8%, 15%);
+}
+
+.btn.pagi:hover {
+    background-color: hsl(210, 8%, 85%);
+}
+
+.btn.pagi.active,
+.btn.pagi:active {
+    background-color: hsl(27, 90%, 55%);
+    color: white;
+    border-color: transparent;
+}
+
+.btn.next {
+    height: 27px;
+    font-size: 13px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    border-color: hsl(210, 8%, 75%);
+    color: hsl(210, 8%, 15%);
+}
+
+.btn.next:hover {
+    background-color: hsl(210, 8%, 85%);
+}
+
+.btn.next.active,
+.btn.next:active {
+    border-color: hsl(210, 8%, 75%);
+}
+
+.pagi_text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    margin: 0 8px;
+    color: hsl(210, 8%, 15%);
 }
 </style>
