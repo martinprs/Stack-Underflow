@@ -27,7 +27,7 @@ import tagsCard from "../components/tags/tagsCard.vue";
             </div>
         </div>
 
-        <div class="row row-cols-lg-4">
+        <div class="row row-cols-4">
             <tagsCard />
             <tagsCard />
             <tagsCard />
