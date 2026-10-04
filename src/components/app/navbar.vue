@@ -1,6 +1,6 @@
 <script setup>
-import { ref } from 'vue';
-import Favicon from '../../public/Favicon.ico'
+import { ref } from "vue";
+import Favicon from "../../../public/Favicon.ico";
 
 const isActive = ref(false);
 </script>

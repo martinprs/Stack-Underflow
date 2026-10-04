@@ -1,6 +1,6 @@
 <script setup>
-import navbar from "./components/navbar.vue";
-import sidebar from "./components/sidebar.vue";
+import navbar from "./components/app/navbar.vue";
+import sidebar from "./components/app/sidebar.vue";
 </script>
 
 <template>

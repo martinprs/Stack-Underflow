@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
-import post from "../components/post.vue";
+import post from "../components/questions/post.vue";
 
 const filterActive = ref(false)
 </script>
