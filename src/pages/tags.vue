@@ -5,6 +5,7 @@ import tagsCard from "../components/tags/tagsCard.vue";
 <template>
     <div class="container">
         <h1 class="w-100 text-start mb-16">Tags</h1>
+
         <p class="description text-start mb-16">
             A tag is a keyword or label that categorizes your question with other, similar questions. Using the right
             tags makes it easier for others to find and answer your question.
@@ -19,7 +20,6 @@ import tagsCard from "../components/tags/tagsCard.vue";
                 </svg>
                 <input class="form-control" placeholder="Filter by tag name" />
             </div>
-
             <div class="btn-group ms-auto">
                 <button class="btn">Popular</button>
                 <button class="btn">Name</button>
@@ -34,7 +34,7 @@ import tagsCard from "../components/tags/tagsCard.vue";
             <tagsCard />
             <tagsCard />
         </div>
-
+        
         <div class="pagin d-flex justify-content-end">
             <button class="btn next visually-hidden">Previous</button>
             <button class="btn pagi active">1</button>
@@ -107,13 +107,9 @@ h1 {
 }
 
 /* Pagination */
-.col.first_pagi,
-.col.second_pagi {
-    display: flex;
-    padding: 0;
+.pagin {
     gap: 4px;
 }
-
 
 .btn.pagi {
     min-width: 25px;
