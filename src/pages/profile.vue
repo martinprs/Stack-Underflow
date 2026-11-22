@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="text-center">
-            <img src="..." class="rounded" alt="...">
+            <img src="./src/assets/temp/26nJXbOM.png" class="rounded profile_image" alt="image">
         </div>
 
         <h1 class="w-100 text-start mb-16">Username</h1>
@@ -24,6 +24,7 @@ h1 {
     font-size: 1.61538462rem;
 }
 
+
 .description {
     width: 632px;
     font-size: 15px;
@@ -32,5 +33,10 @@ h1 {
 
 .mb-16 {
     margin-bottom: 16px;
+}
+
+.profile_image {
+    width: 128px;
+    height: 128px;
 }
 </style>
