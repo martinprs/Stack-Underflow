@@ -1,3 +1,9 @@
+<script setup>
+import { ref } from "vue";
+
+const isActive = ref(false);
+</script>
+
 <template>
     <div class="container">
         <div class="info">
@@ -11,7 +17,9 @@
                             d="M9 4.5a1.5 1.5 0 0 0 1.28-2.27L9 0 7.72 2.23q-.22.33-.22.77c0 .83.68 1.5 1.5 1.5m3.45 7.5-.8-.81-.81.8c-.98.98-2.69.98-3.67 0l-.8-.8-.82.8c-.49.49-1.14.76-1.83.76-.55 0-1.3-.17-1.72-.46V15c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2v-2.7c-.42.28-1.17.45-1.72.45-.69 0-1.34-.27-1.83-.76M13.75 7H10V5H8v2H4.25C3 7 2 8 2 9.25v.9c0 .81.91 1.47 1.72 1.47.39 0 .77-.14 1.03-.42l1.61-1.6 1.6 1.6a1.5 1.5 0 0 0 2.08 0l1.6-1.6 1.6 1.6q.43.43 1.03.43c.81 0 1.73-.67 1.73-1.48v-.9C16 8.01 15 7 13.75 7">
                         </path>
                     </svg>
-                    <span><p class="meta_text">Member for 1 year, 8 months</p></span>
+                    <span>
+                        <p class="meta_text">Member for 1 year, 8 months</p>
+                    </span>
                 </div>
 
                 <a class="github_link" href="https://github.com/martinprs" title="GitHub profile">
@@ -23,16 +31,25 @@
                 </a>
             </div>
         </div>
+
+        <div class="profile_tab">
+            <button class="tab btn" :class="{ active: isActive }" @click="isActive = !isActive">Profile</button>
+            <button class="tab btn">Activity</button>
+            <button class="tab btn">Saves</button>
+            <button class="tab btn">Settings</button>
+        </div>
     </div>
 </template>
 
 <style scoped>
+/* Global */
 .container {
     max-width: none;
     padding: 24px;
     text-align: left;
 }
 
+/* Info div */
 .info {
     display: flex;
     align-items: center;
@@ -61,7 +78,7 @@ h1 {
     line-height: 18px;
 }
 
-.profile_meta > span,
+.profile_meta>span,
 .profile_meta p {
     display: inline;
     margin: 0;
@@ -85,4 +102,31 @@ h1 {
     margin-left: -4px;
     color: hsl(210, 8%, 45%);
 }
+
+/* Profile_tab div */
+.tab.btn {
+    font-size: 13px !important;
+    font-weight: 400;
+    height: 29px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    margin: 0px 2px;
+}
+
+.tab.btn.active {
+    height: 29px;
+    background-color: hsl(27, 90.4%, 55.1%);
+    color: white !important;
+    border-radius: 360px;
+}
+
+.tab.btn:hover {
+    background-color: #e3e6e8;
+}
+
+.tab.btn.active:hover {
+    background-color: hsl(27, 90%, calc(55% - 10%));
+}
+
 </style>
