@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="text-center">
-            <img src="./src/assets/temp/26nJXbOM.png" class="rounded profile_image" alt="image">
+            <img src="../../src/assets/temp/26nJXbOM.png" class="rounded profile_image" alt="image">
         </div>
 
         <h1 class="w-100 text-start mb-16">Username</h1>
