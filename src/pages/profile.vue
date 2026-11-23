@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from "vue";
 
+import profile from "../components/profile/profile.vue";
+
 const activeTab = ref("Profile");
 </script>
 
@@ -37,6 +39,10 @@ const activeTab = ref("Profile");
             <button class="tab btn" :class="{ active: activeTab === 'Activity' }" @click="activeTab = 'Activity'">Activity</button>
             <button class="tab btn" :class="{ active: activeTab === 'Saves' }" @click="activeTab = 'Saves'">Saves</button>
             <button class="tab btn" :class="{ active: activeTab === 'Settings' }" @click="activeTab = 'Settings'">Settings</button>
+        </div>
+
+        <div class="profile_content">
+            <profile />
         </div>
     </div>
 </template>
@@ -108,6 +114,7 @@ h1 {
     display: flex;
     align-items: center;
     margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .tab.btn {
@@ -135,5 +142,4 @@ h1 {
 .tab.btn.active:hover {
     background-color: hsl(27, 90%, calc(55% - 10%));
 }
-
 </style>
