@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 
-const isActive = ref(false);
+const activeTab = ref("Profile");
 </script>
 
 <template>
@@ -33,23 +33,23 @@ const isActive = ref(false);
         </div>
 
         <div class="profile_tab">
-            <button class="tab btn" :class="{ active: isActive }" @click="isActive = !isActive">Profile</button>
-            <button class="tab btn">Activity</button>
-            <button class="tab btn">Saves</button>
-            <button class="tab btn">Settings</button>
+            <button class="tab btn" :class="{ active: activeTab === 'Profile' }" @click="activeTab = 'Profile'">Profile</button>
+            <button class="tab btn" :class="{ active: activeTab === 'Activity' }" @click="activeTab = 'Activity'">Activity</button>
+            <button class="tab btn" :class="{ active: activeTab === 'Saves' }" @click="activeTab = 'Saves'">Saves</button>
+            <button class="tab btn" :class="{ active: activeTab === 'Settings' }" @click="activeTab = 'Settings'">Settings</button>
         </div>
     </div>
 </template>
 
 <style scoped>
-/* Global */
+/* global */
 .container {
     max-width: none;
     padding: 24px;
     text-align: left;
 }
 
-/* Info div */
+/* info */
 .info {
     display: flex;
     align-items: center;
@@ -103,26 +103,32 @@ h1 {
     color: hsl(210, 8%, 45%);
 }
 
-/* Profile_tab div */
-.tab.btn {
-    font-size: 13px !important;
-    font-weight: 400;
-    height: 29px;
-    height: 32px;
+/* profile_tab */
+.profile_tab {
     display: flex;
     align-items: center;
-    margin: 0px 2px;
+    margin-top: 16px;
+}
+
+.tab.btn {
+    font-size: 13px;
+    font-weight: 400;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    border: 0;
+    border-radius: 360px;
+    color: hsl(210,8%,25%);
 }
 
 .tab.btn.active {
-    height: 29px;
     background-color: hsl(27, 90.4%, 55.1%);
     color: white !important;
-    border-radius: 360px;
 }
 
 .tab.btn:hover {
     background-color: #e3e6e8;
+    color: black;
 }
 
 .tab.btn.active:hover {
