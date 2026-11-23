@@ -205,6 +205,7 @@ const isActive = ref(false);
 
 .buttons {
     margin-left: 5px;
+    display: flex;
 }
 
 .btn {
@@ -213,6 +214,7 @@ const isActive = ref(false);
     display: flex;
     align-items: center;
     margin: 0px 2px;
+    border: none;
 }
 
 .btn.log {
