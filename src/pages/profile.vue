@@ -117,6 +117,7 @@ h1 {
     display: flex;
     align-items: center;
     border: 0;
+    margin-right: 6px;
     border-radius: 360px;
     color: hsl(210,8%,25%);
 }
